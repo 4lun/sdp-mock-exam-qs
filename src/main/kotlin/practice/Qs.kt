@@ -15,3 +15,9 @@ data class Item(val name: String, val price: Double) {
     }
   }
 }
+
+class ClothesWasher {
+  constructor(): super() {}
+  constructor(modelName: String) {}
+  constructor(capacity: Double) {}
+}

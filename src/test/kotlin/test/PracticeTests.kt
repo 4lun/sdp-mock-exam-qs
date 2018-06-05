@@ -1,8 +1,7 @@
 package test
 import practice.*
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Assertions.*
 
 class PracticeTests {
   // For comparing Doubles - we don't care if they are slightly out
@@ -31,5 +30,17 @@ class PracticeTests {
     assertTrue(sunscreen.cost().nearEnough(3.3))
     val tv = Item(name="television", price=500.0)
     assertTrue(tv.cost(taxRate = 0.06).nearEnough(530.0))
+  }
+
+  @Test
+  fun q4() {
+    try {
+      ClothesWasher()
+      ClothesWasher("TurboClean")
+      ClothesWasher(25.0)
+
+    } catch (exception: Exception) {
+      fail<Nothing>("Fail")
+    }
   }
 }
