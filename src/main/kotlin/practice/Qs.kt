@@ -21,3 +21,5 @@ class ClothesWasher {
   constructor(modelName: String) {}
   constructor(capacity: Double) {}
 }
+
+data class Person(val first: String, val last: String, val email: String)

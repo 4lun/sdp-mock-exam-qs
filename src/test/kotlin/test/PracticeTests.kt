@@ -43,4 +43,12 @@ class PracticeTests {
       fail<Nothing>("Fail")
     }
   }
+
+  @Test
+  fun q5() {
+    val p = Person("Jane", "Smile","jane@smile.com")
+    assertEquals(p.first, "Jane")
+    assertEquals(p.last, "Smile")
+    assertEquals(p.email, "jane@smile.com")
+  }
 }
