@@ -5,3 +5,13 @@ fun manyTimesString(str: String, i: Int): String {
 }
 
 data class SimpleTime(val hours: Int, val minutes: Int)
+
+data class Item(val name: String, val price: Double) {
+  fun cost(grocery: Boolean = false, medication: Boolean = false, taxRate: Double = 0.10): Double {
+    return if (grocery || medication) {
+      price
+    } else {
+      price * (1 + taxRate)
+    }
+  }
+}
