@@ -70,4 +70,12 @@ class PracticeTests {
   fun q8() {
     assertNotNull("Adapter?")
   }
+
+  @Test
+  fun q9() {
+    assertNotNull("""
+      Change the class keyword on the class definition to object. Then inspect
+      the usage of the class in the codebase and refactor if necessary
+    """)
+  }
 }
