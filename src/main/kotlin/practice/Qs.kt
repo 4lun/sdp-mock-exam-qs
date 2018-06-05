@@ -1,5 +1,5 @@
 package practice
 
 fun manyTimesString(str: String, i: Int): String {
-  return ""
+  return str.repeat(i)
 }
