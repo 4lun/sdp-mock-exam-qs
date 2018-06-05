@@ -23,3 +23,7 @@ class ClothesWasher {
 }
 
 data class Person(val first: String, val last: String, val email: String)
+
+fun between(temperature: Int, low: Int, high: Int) : Boolean {
+  return temperature > low && temperature < high
+}

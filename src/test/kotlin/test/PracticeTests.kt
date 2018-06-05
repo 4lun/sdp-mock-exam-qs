@@ -51,4 +51,10 @@ class PracticeTests {
     assertEquals(p.last, "Smile")
     assertEquals(p.email, "jane@smile.com")
   }
+
+  @Test
+  fun q6() {
+    assertFalse(between(70, 80, 90))
+    assertTrue(between(70, 60, 90))
+  }
 }
