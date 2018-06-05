@@ -2,6 +2,7 @@ package test
 import practice.*
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Disabled
 
 class PracticeTests {
   // For comparing Doubles - we don't care if they are slightly out
@@ -62,5 +63,11 @@ class PracticeTests {
   fun q7() {
     assertEquals(sumIt(1, 2, 3), 6)
     assertEquals(sumIt(45, 45, 45, 60), 195)
+  }
+
+  @Test
+  @Disabled("To Do")
+  fun q8() {
+    assertNotNull("Adapter?")
   }
 }
