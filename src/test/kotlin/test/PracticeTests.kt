@@ -57,4 +57,10 @@ class PracticeTests {
     assertFalse(between(70, 80, 90))
     assertTrue(between(70, 60, 90))
   }
+
+  @Test
+  fun q7() {
+    assertEquals(sumIt(1, 2, 3), 6)
+    assertEquals(sumIt(45, 45, 45, 60), 195)
+  }
 }

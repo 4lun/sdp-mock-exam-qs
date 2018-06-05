@@ -27,3 +27,7 @@ data class Person(val first: String, val last: String, val email: String)
 fun between(temperature: Int, low: Int, high: Int) : Boolean {
   return temperature > low && temperature < high
 }
+
+fun sumIt(vararg values: Int): Int {
+  return values.reduce { acc, value -> acc + value }
+}
